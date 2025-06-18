@@ -30,3 +30,7 @@ def six_is_called():
 def eight_is_called():
     """Asserts that 8 returns [2, 2, 2]"""
     assert 8 == [2, 2, 2]
+
+def nine_is_called():
+    """Asserts that 9 returns [3, 3]"""
+    assert 9 == [3, 3]
