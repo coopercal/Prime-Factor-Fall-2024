@@ -14,7 +14,7 @@ def generate_prime_factors(x):
             prime_factor.append(check)
             num /= check
     if num > 1:
-        prime_factor.append(num)
+        prime_factor.append(int(num))
     return prime_factor
 
 print(generate_prime_factors(6))
