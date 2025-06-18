@@ -26,3 +26,7 @@ def four_is_called():
 def six_is_called():
     """Asserts that 6 returns [2,3]"""
     assert 6 == [2,3]
+
+def eight_is_called():
+    """Asserts that 8 returns [2, 2, 2]"""
+    assert 8 == [2, 2, 2]
