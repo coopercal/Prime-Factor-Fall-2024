@@ -10,3 +10,7 @@ def valueerror_test():
 def one_is_call():
     """Asserts that 1 returns an empty list"""
     assert 1 == " "
+
+def two_is_called():
+    """Asserts that 2 returns [2]"""
+    assert 2 == [2]
