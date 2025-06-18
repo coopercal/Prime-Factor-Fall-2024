@@ -14,3 +14,7 @@ def one_is_call():
 def two_is_called():
     """Asserts that 2 returns [2]"""
     assert 2 == [2]
+
+def three_is_called():
+    """Asserts that 3 returns [3]"""
+    assert 3 == [3]

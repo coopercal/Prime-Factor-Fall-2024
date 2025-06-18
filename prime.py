@@ -10,4 +10,4 @@ def generate_prime_factors(x):
         y = x/1
         print('[',int(y),']')
 
-generate_prime_factors(2)
+generate_prime_factors(3)
