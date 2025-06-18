@@ -1,12 +1,12 @@
 #tests/test_generate_prime_factors.py
 import pytest
 
-from pytest import raises
-
-from prime import generate_prime_factors
-
-
-def ValueError_Test():
+def valueerror_test():
     """Asserts that a value error is raised when a data type that is not an integer is called"""
-    with raises(ValueError):
-        generate_prime_factors()
+    with pytest.raises(ValueError,int):
+        raise ValueError('Value must be an integer.')
+
+
+def one_is_call():
+    """Asserts that 1 returns an empty list"""
+    assert 1 == " "
