@@ -1,36 +1,38 @@
 #tests/test_generate_prime_factors.py
 import pytest
 
-def valueerror_test():
+from prime import generate_prime_factors
+
+
+def test_ValueError():
     """Asserts that a value error is raised when a data type that is not an integer is called"""
-    with pytest.raises(ValueError,int):
-        raise ValueError('Value must be an integer.')
+    with pytest.raises(ValueError):
+        generate_prime_factors(3.0)
 
-
-def one_is_call():
+def test_oneIsCalled():
     """Asserts that 1 returns an empty list"""
-    assert 1 == " "
+    assert generate_prime_factors(1) == " "
 
-def two_is_called():
+def test_twoIsCalled():
     """Asserts that 2 returns [2]"""
-    assert 2 == [2]
+    assert generate_prime_factors(2) == [2]
 
-def three_is_called():
+def test_threeIsCalled():
     """Asserts that 3 returns [3]"""
-    assert 3 == [3]
+    assert generate_prime_factors(3) == [3]
 
-def four_is_called():
+def test_fourIsCalled():
     """Asserts that 4 returns [2, 2]"""
-    assert 4 == [2, 2]
+    assert generate_prime_factors(4) == [2, 2]
 
-def six_is_called():
+def test_sixIsCalled():
     """Asserts that 6 returns [2,3]"""
-    assert 6 == [2,3]
+    assert generate_prime_factors(6) == [2,3]
 
-def eight_is_called():
+def test_eightIsCalled():
     """Asserts that 8 returns [2, 2, 2]"""
-    assert 8 == [2, 2, 2]
+    assert generate_prime_factors(8) == [2, 2, 2]
 
-def nine_is_called():
+def test_nineIsCalled():
     """Asserts that 9 returns [3, 3]"""
-    assert 9 == [3, 3]
+    assert generate_prime_factors(9) == [3, 3]

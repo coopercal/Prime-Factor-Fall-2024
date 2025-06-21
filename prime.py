@@ -3,6 +3,8 @@ prime.py -- Write the application code here
 """
 
 def generate_prime_factors(x):
+    if not isinstance(x, int):
+        raise ValueError
     from math import sqrt
     prime_factor = []
     limit = int(sqrt(x)) + 1
